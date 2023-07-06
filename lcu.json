@@ -1,0 +1,26 @@
+{
+  "Package": {
+    "Name": "Azure ADB2C Launch Control",
+    "Description": "An LCU for installing Azure ADB2C into an azure subscription and resource.",
+    "Image": "https://www.fathym.com/assets/images/logo.png",
+    "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
+    "Intents": [
+      "Azure",
+      "ADB2C",
+      "User Authentication"
+    ]
+  },
+  "Configurations": {
+    "ADB2C": {
+      "Name": "Azure ADB2C Setup",
+      "Description": "Azure ADB2C Setup.",
+      "Phases": [
+        {
+          "Name": "Azure ADB2C Setup",
+          "Order": 1,
+          "Asset": "adb2c"
+        }
+      ]
+    }
+  }
+}

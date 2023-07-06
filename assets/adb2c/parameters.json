@@ -1,0 +1,80 @@
+{
+  "PROJECT_LOOKUP": {
+    "Order": 1,
+    "Prompts": [
+      {
+        "Type": "eac:projects|select",
+        "Message": "Choose the project to deploy the ADB2C applications to:",
+        "Arguments": {
+          "CreateText": "Create a project"
+        }
+      }
+    ]
+  },
+  "AZURE_CLOUD_LOOKUP": {
+    "Order": 2,
+    "Prompts": [
+      {
+        "Type": "eac:env:clouds|select",
+        "Message": "Choose the cloud to connect the ADB2C tenant to:"
+      }
+    ]
+  },
+  "AZURE_RESOURCE_GROUP": {
+    "Order": 2,
+    "Prompts": [
+      {
+        "Type": "eac:env:clouds:groups|select",
+        "Message": "Choose the cloud resource group to add the ADB2C tenant to:",
+        "Arguments": {
+          "AZURE_CLOUD_LOOKUP": "CloudLookup"
+        }
+      }
+    ]
+  },
+  "ADB2C_NAME": {
+    "Order": 3,
+    "Prompts": [
+      {
+        "Message": "Enter the name for your ADB2C tenant:"
+      }
+    ]
+  },
+  "ADB2C_LOCATION": {
+    "Order": 4,
+    "Prompts": [
+      {
+        "Type": "|select",
+        "Message": "Select the location of the ADB2C instance:",
+        "Choices": [
+          "United States",
+          "Europe",
+          "Asia Pacific",
+          "Australia"
+        ]
+      }
+    ]
+  },
+  "ADB2C_COUNTRY_CODE": {
+    "Order": 5,
+    "Prompts": [
+      {
+        "Message": "Enter the country code for data residency (https://aka.ms/B2CDataResidency):"
+      }
+    ]
+  },
+  "ADB2C_SKU": {
+    "Order": 6,
+    "Prompts": [
+      {
+        "Type": "|select",
+        "Message": "Select the ADB2C sku:",
+        "Choices": [
+          "PremiumP1",
+          "PremiumP2",
+          "Standard"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+        "value": "{{ADB2C_NAME}}",
+        "type": "string"
+    },
+    "adb2c_location": {
+        "value": "{{ADB2C_LOCATION}}",
+        "type": "string"
+    },
+    "adb2c_country_code": {
+        "value": "{{ADB2C_COUNTRY_CODE}}",
+        "type": "string"
+    },
+    "adb2c_sku": {
+        "value": "{{ADB2C_SKU}}",
+        "type": "string"
+    }
+  }
+}

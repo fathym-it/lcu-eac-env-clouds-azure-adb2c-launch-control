@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+        "type": "string"
+    },
+    "adb2c_location": {
+        "type": "string"
+    },
+    "adb2c_country_code": {
+        "type": "string"
+    },
+    "adb2c_sku": {
+        "type": "string"
+    }
+  },
+  "resources": [{
+    "type": "Microsoft.AzureActiveDirectory/b2cDirectories",
+    "apiVersion": "2021-04-01",
+    "name": "[parameters('name')]",
+    "location": "[parameters('adb2c_location')]",
+    "sku": {
+      "name": "[parameters('adb2c_sku')]",
+      "tier": "A0"
+    },
+    "properties": {
+      "createTenantProperties": {
+        "countryCode": "[parameters('adb2c_location')]",
+        "displayName": "[parameters('name')]"
+      }
+    }
+  }]
+}
