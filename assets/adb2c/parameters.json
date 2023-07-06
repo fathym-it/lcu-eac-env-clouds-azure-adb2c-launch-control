@@ -21,7 +21,7 @@
     ]
   },
   "AZURE_RESOURCE_GROUP": {
-    "Order": 2,
+    "Order": 3,
     "Prompts": [
       {
         "Type": "eac:env:clouds:groups|select",
@@ -33,7 +33,7 @@
     ]
   },
   "ADB2C_NAME": {
-    "Order": 3,
+    "Order": 4,
     "Prompts": [
       {
         "Message": "Enter the name for your ADB2C tenant:"
@@ -41,7 +41,7 @@
     ]
   },
   "ADB2C_LOCATION": {
-    "Order": 4,
+    "Order": 5,
     "Prompts": [
       {
         "Type": "|select",
@@ -56,7 +56,7 @@
     ]
   },
   "ADB2C_COUNTRY_CODE": {
-    "Order": 5,
+    "Order": 6,
     "Prompts": [
       {
         "Message": "Enter the country code for data residency (https://aka.ms/B2CDataResidency):"
@@ -64,7 +64,7 @@
     ]
   },
   "ADB2C_SKU": {
-    "Order": 6,
+    "Order": 7,
     "Prompts": [
       {
         "Type": "|select",

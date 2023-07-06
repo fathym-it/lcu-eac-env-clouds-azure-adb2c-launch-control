@@ -27,7 +27,7 @@
   "Environments": {
     "{{EaC.PrimaryEnvironment}}": {
       "Clouds": {
-        "ADB2C": {
+        "{{AZURE_CLOUD_LOOKUP}}": {
           "ResourceGroups": {
             "{{AZURE_RESOURCE_GROUP}}": {
               "Details": {
